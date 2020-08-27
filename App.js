@@ -38,7 +38,7 @@ class App extends React.Component {
   filterByDate({dateFrom, dateTo}, hotel){
     const availabilityFrom = this.dateConvert(hotel.availabilityFrom)
     const availabilityTo = this.dateConvert(hotel.availabilityTo)
-    return availabilityFrom >= dateFrom && availabilityTo <= dateTo;
+    return availabilityFrom <= dateFrom && availabilityTo >= dateTo;
   }
 
   filterByCountry({country}, hotelCountry){
