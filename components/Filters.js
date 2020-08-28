@@ -23,13 +23,10 @@ export default class Filters extends React.Component {
             <nav className="navbar navbar-expand-lg navbar-light bg-info">
                 <div className="collapse navbar-collapse">
                     <div className="input-group">
-                        <div className="input-group-prepend">
-                            <span className="input-group-text">Pick your date</span>
-                        </div>
                         <input type="date" id="dateFrom" name="dateFrom" value={this.dateConvert(dateFrom)}
-                            onChange={this.updateFilters} className="form-control" />
+                            onChange={this.updateFilters} className="form-control w-50"/>
                         <input type="date" id="dateTo" name="dateTo" value={this.dateConvert(dateTo)}
-                            onChange={this.updateFilters} className="form-control" />
+                            onChange={this.updateFilters} className="form-control w-50" />
                     </div>
                     <select className="custom-select w-50" value={country} name="country" id="country"
                         onChange={this.updateFilters}>
